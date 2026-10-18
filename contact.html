@@ -26,6 +26,60 @@
             <h1>
                 Contactez-moi
             </h1>
+            <p>Une question, une proposition de stage ou de projet ? Écrivez-moi via le formulaire ci-dessous.</p>
         <section>
+        <section id="formulaire">
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>
+                        vos coordonnées
+                    </legend>
+                    <p>
+                        <label for="nom">Nom</label><br>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        votre message
+                    </legend>
+                    <p>
+                        <label for="sujet">Sujet</label><br>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Choisir un sujet</option>
+                            <optgroup label="Opportunités">
+                                <option value="stage">Stage</option>
+                                <option value="projet">Projet</option>
+                            </optgroup>
+                            <optgroup label="Autre">
+                                <option value="question">Question</option>
+                                <option value="autre">Autre demande</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="msg">Message</label><br>
+                        <textarea rows="4" cols="30" id="msg" name="message" placeholder="Votre message ..." required></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="consentement" name="consentement" required>
+                        <label for="consentement">J'accepte d'être contacté par email</label>
+                    </p>
+                </fieldset>
+                <button type="submit">envoyer</button>
+            </form>
+            <footer>
+                <h1>Coordonnés</h1>
+                <span>Email :</span>
+                <a href="mailto:mmppooll567@gmail.com">mmppooll567@gmail.com</a>
+                <p>Localisation : Ben Arous, Tunisie</p>
+                <p>&copy; 2026 MonPortfolio</p>
+            </footer>
+        </section>
 </body>
 </html>
